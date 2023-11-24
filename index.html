@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <!-- <form action="" name="example" autocomplete="on" novalidate>
+        <label for="">Email
+            <input type="text">
+        </label>
+        <label for="">Password
+            <input type="password">
+        </label>
+    <button type="submit">Save</button>
+    </form> -->
+
+    <form action="">
+        <label for="">First name
+            <input 
+            type="text" 
+            name="first_name" 
+            autofocus 
+            placeholder="Введіть ім'я" 
+            minlength="3" 
+            maxlength="12"
+            
+            ></label>
+        <label for="">Last name <input type="text" name="last_name" placeholder="Введіть прізвище"></label>
+        <label >html
+            <input 
+            value="html"
+            type="radio" 
+            name="tehno" 
+            checked
+        ></label>
+        <label for="">css
+                <input 
+                value="css"
+                type="radio" 
+                name="tehno" 
+        ></label>
+        <label for="">js
+                 <input 
+                 value="js"
+                type="radio" 
+                name="tehno" 
+        ></label>
+        <button type="submit">Надіслати</button>
+    </form>
+
+    <form action="">
+        <label >music
+            <input 
+            value="music"
+            type="checkbox" 
+            name="hobby" 
+            checked
+        ></label>
+        <label for="">sport
+            <input 
+            value="sport"
+            type="checkbox" 
+            name="hobby" 
+        ></label>
+        <label for="">reading
+            <input 
+            value="reading"
+            type="checkbox" 
+            name="hobby" 
+        /></label>
+        <button type="submit">Надіслати</button>
+    </form>
+    <form action="">
+        <label for="">Number
+            <input type="number" name="age" value="0" min="18" max="90"/>
+        </label>
+        <label for="">Telephone
+            <input type="tel" name="tel">
+        </label>
+        <label for="">Введіть період
+            <input type="range" name="range" value="0" min="10" max="100" step="20">
+        </label>
+        <label for="">Date
+            <input type="date">
+        </label>
+        <label for="">Time
+            <input type="time">
+        </label>
+        <label for="">Date and Time
+            <input type="datetime-local">
+        </label>
+        <label for="">Color
+            <input type="color">
+        </label>
+    </form>
+    <form action="">
+        <label for="color">Color</label>
+        <select name="color" id="color">
+            <option value="red">Red</option>
+            <option value="grin">grin</option>
+            <option value="grey">gray</option>
+            <option value="bleck">bleck</option>
+        </select>
+    </form>
+
+    <form action="">
+        <label for="month">Month</label>
+        <select name="month" id="month">
+        <optgroup label="Summer">
+            <option value="s1">s1</option>
+            <option value="s2">s2</option>
+            <option value="s3">s3</option>
+        </optgroup>
+        </select>
+    </form>
+
+    <form action="">
+        <label for="fav">Вибери свій улюблений браузер</label>
+        <input list="browser" id="fav" name="fav"/>
+        <datalist id="browser">
+            <option value="Egde">Egde</option>
+            <option value="FireFox">FireFox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+        </datalist>
+    </form>
+
+
+</body>
+</html>

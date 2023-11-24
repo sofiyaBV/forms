@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 4px;
+    font-family: inherit;
+}
