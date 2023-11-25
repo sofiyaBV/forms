@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+<body>
+    <a href="/index.html">main</a>
+    <form action="">
+        <label for="">User name <input type="text" name="user_name" required pattern="^[A-Za-z]+\s[A-Za-z]+$" title="Тут тайтл формата"></label>
+        <label for="">Email<input type="email" name="email" autofocus autocomplete="on" required pattern="^[a-zA-Z0-9]{3,}@[a-zA-Z0-9]{2,}[.][a-zA-Z0-9]{2,}$"  title="Введіть коректний email"></label>
+        <label for="">Password<input type="password" name="password" required minlength="6" maxlength="12" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9!@#$%^&*]{8,}$" title="Не правильно введений пароль"></label>
+        <button type="submit" class="btn">Зберегти</button>
+        <button type="submit" class="btn" disabled>Збережено</button>
+    </form>
+    <!-- Checked -->
+    <form action="">
+        <p>Яке твоє хоббі?</p>
+        <div class="form_field">
+            <input type="checkbox" class="form_input" name="hobby" value="Manga" id="Manga">
+            <label for="Manga" class="form_lable">Manga</label>
+        </div>
+        <div class="form_field">
+            <input type="checkbox" class="form_input" name="hobby" value="Game" id="Game">
+            <label for="Game" class="form_lable">Game</label>
+        </div>
+        <div class="form_field">
+            <input type="checkbox" class="form_input" name="hobby" value="Salsa" id="Salsa">
+            <label for="Salsa" class="form_lable">Salsa</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- range -->
+    <form action="">
+        <div class="form_field">
+            <input type="number" class="form_input" name="amount_1" value="0" id="amount_1" required min="5" max="10" step="1">
+            <label for="amount_1" class="form_lable">Скільки піц ви хочете замовити?</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

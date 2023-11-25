@@ -20,3 +20,35 @@ input{
     padding: 4px;
     font-family: inherit;
 }
+.btn{
+    display: inline-flex;
+    padding: 12px 24px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover, 
+.btn:focus{
+    background-color: brown;
+}
+.btn:disabled{
+    background-color: rgb(124, 124, 124);
+    cursor: not-allowed;
+}
+
+.form_input:checked{
+    outline: 2px solid #2196f3;
+    outline-offset: 2px;
+}
+.form_input:checked + .form_lable{
+    color: #2196f3 ;
+}
+.form_input:in-range{
+    border-color: green;
+}
+.form_input:out-of-range{
+    border-color: red;
+}
